@@ -7,7 +7,7 @@
     <body>
         <div id="app">
             <ul>
-                <li v-for="color in colors">{{color}}</li>
+                <li v-for="color in colors" v-if="color.primary">{{color.text}}</li>
             </ul>
         </div>
         
@@ -36,7 +36,7 @@
                             text: 'orange',
                             primary: false
                         }
-                        'red', 'green', 'blue', 'yellow', 'orange']
+                        ]
                 }
             });
         </script>
