@@ -3,6 +3,13 @@ import App from './components/App.vue'
 
 import store from './store'
 
+// store.commit('INIT_JOKES', [
+//     {
+//         test: 'test_joke1',
+//         test2: 'test_joke2'
+//     }
+// ]);
+
 new Vue({
     el: '#app',
     store,
